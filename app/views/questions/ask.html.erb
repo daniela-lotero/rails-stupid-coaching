@@ -1,0 +1,13 @@
+
+<div class="container m-4 d-center" >
+  <div class="card w-50">
+    <div class="card-body">
+      <h1 class="text-center">"Hello, what do you need now? 🙄</h1>
+      <p class="card-text text-center">Here you can ask something to your coach.</p>
+      <form action="/answer" data-turbo="false" method="get" class="text-center">
+        <input type="text" name="questions" class="text-center" value="<%= params[:questions] %>" placeholder="Write some question">
+        <input type="submit" value="Ask!" class="btn btn-primary">
+    </form>
+    </div>
+  </div>
+</div>
